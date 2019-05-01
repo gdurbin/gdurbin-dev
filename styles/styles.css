@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "navbar" "mainContent";
+  width: 100%;
+}
+
+nav#navbar {
+  grid-area: navbar;
+  align-self: center;
+  font-size: 20px;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: grey;
+}
+
+nav#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0 30px 0 20px;
+}
+
+nav#navbar a:hover {
+  color: black;
+}
+
+.nav-ico i {
+  color: white;
+}
+
+a.nav-self {
+  float: left;
+}
+
+nav#navbar a.nav-ico i {
+  float: left;
+  padding: 4px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  nav#navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+    a.nav-self {
+      float: none;
+  }
+
+  a.ico {
+    float: none;
+  }
+}
+.main-container {
+  grid-area: mainContent;
+}
+
+#welcome-section {
+  min-height: 92vh;
+  padding-top: 8vh;
+}
+
+#welcome-section p {
+  padding: 20px;
+}
+
+#welcome-section li {
+  list-style-type: none;
+}
+
+#projects {
+  min-height: 75vh;
+  padding-top: 25vh;
+}
+
+.project {
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.project-img{
+  width: 100%;
+  height: 180px;
+}
+
+.project-card {
+  border: 1px solid grey;
+  width: 280px;
+  height: 200px;
+}
+
+#contact {
+  min-height: 75vh;
+  padding-top: 25vh;
+}
+
+.fa-twitter-square,
+.fa-github-square,
+.fa-envelope-square {
+  color: grey;
+}
+
+footer {
+  color: white;
+  background-color: grey;
+}
