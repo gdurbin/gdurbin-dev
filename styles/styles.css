@@ -28,10 +28,17 @@ nav#navbar {
   background-color: grey;
 }
 
+a.nav-self {
+  padding: 0 10px;
+}
+
+a.nav-link {
+  padding: 10px;
+}
+
 nav#navbar a {
   color: white;
   text-decoration: none;
-  padding: 0 30px 0 20px;
 }
 
 nav#navbar a:hover {
@@ -50,31 +57,14 @@ a.nav-self {
   float: left;
 }
 
-
-
 nav#navbar a.nav-ico i  {
   float: left;
   padding: 4px;
   font-size: 25px;
 }
 
-@media screen and (max-width: 500px) {
-  nav#navbar {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-    a.nav-self {
-      float: none;
-  }
-
-  a.ico {
-    float: none;
-  }
-}
-.main-container {
-  grid-area: mainContent;
+div.navbar-sections {
+  padding-right: 20px;
 }
 
 #welcome-section {
@@ -119,13 +109,89 @@ nav#navbar a.nav-ico i  {
   padding-top: 25vh;
 }
 
-.fa-twitter-square,
-.fa-github-square,
-.fa-envelope-square {
-  color: grey;
-}
+@media screen and (max-width: 500px) {
+  nav#navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0;
+  }
 
-footer {
-  color: white;
-  background-color: grey;
+  nav#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 5px 5px 5px;
+  }
+
+  a.nav-self {
+    float: none;
+    padding-bottom: 10px;
+  }
+
+  nav#navbar a.nav-ico i  {
+    float: none;
+    padding: 0;
+    font-size: 30px;
+  }
+  
+  div.navbar-icons {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  div.navbar-sections {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  a.nav-link {
+    display: block;
+  }
+
+  a.twitter-ico.nav-ico {
+    padding: 0;
+  }
+
+  .main-container {
+    grid-area: mainContent;
+    min-width: 300px;
+  }
+
+  #welcome-section {
+    min-height: 0;
+    padding-top: 200px;
+  }
+
+  #welcome-section p {
+    padding: 20px;
+  }
+
+  #welcome-section li {
+    list-style-type: none;
+  }
+
+  #projects {
+    min-height: 0;
+    padding-top: 40px;
+  }
+
+  #contact {
+    min-height: 0;
+    padding: 40px 0;
+  }
+
+  .fa-twitter-square,
+  .fa-github-square,
+  .fa-envelope-square {
+    color: grey;
+  }
+
+  footer {
+    color: white;
+    background-color: grey;
+  }
 }
