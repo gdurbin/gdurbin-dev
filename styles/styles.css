@@ -109,6 +109,17 @@ div.navbar-sections {
   padding-top: 25vh;
 }
 
+.fa-twitter-square,
+.fa-github-square,
+.fa-envelope-square {
+  color: grey;
+}
+
+footer {
+  color: white;
+  background-color: grey;
+}
+
 @media screen and (max-width: 500px) {
   nav#navbar {
     display: flex;
@@ -184,14 +195,4 @@ div.navbar-sections {
     padding: 40px 0;
   }
 
-  .fa-twitter-square,
-  .fa-github-square,
-  .fa-envelope-square {
-    color: grey;
-  }
-
-  footer {
-    color: white;
-    background-color: grey;
-  }
 }
