@@ -68,8 +68,8 @@ div.navbar-sections {
 }
 
 #welcome-section {
-  min-height: 92vh;
-  padding-top: 8vh;
+  min-height: 80vh;
+  padding-top: 20vh;
 }
 
 #welcome-section p {
