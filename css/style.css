@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center; }
+
+.profile {
+  font-size: 1.6rem; }
+  .profile__name {
+    font-size: 2.8rem; }
+  .profile__title {
+    font-size: 1.8rem; }
+  .profile__links {
+    font-size: 2.8rem; }
+  .profile__skills-title {
+    font-size: 1.8rem; }
+  .profile__skills .skills-item {
+    color: white; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+* {
+  font-family: "Poppins", sans-serif; }
+
+.container {
+  display: grid;
+  grid-template-columns: 400px 1fr; }
+
+.profile {
+  padding: 2rem; }
+  .profile__img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px; }
+  .profile__links ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none; }
+  .profile__skills-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    list-style: none; }
+    .profile__skills-list .skills-item {
+      background-color: black;
+      border-radius: .5rem; }

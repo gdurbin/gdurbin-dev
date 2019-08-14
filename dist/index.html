@@ -14,77 +14,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Gerrett Durbin | JavaScript Developer</title>
 </head>
 <body>
 
-<div class="main-container">
+<div class="container">
 
-  <header>
-    <nav id="navbar">
-      <a href="/dist/index.html" class="nav-self">gdurbin.dev</a>
-      <div class="navbar-icons">
-        <a href="https://twitter.com/gwdurbin" class="twitter-ico nav-ico" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-        <a href="https://github.com/gdurbin" class="github-ico nav-ico" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
-        <a href="mailto: gerrettdurbin@gmail.com" class="email-ico nav-ico"><i class="fas fa-envelope-square fa-2x" target="_blank"></i></a>
-      </div>
-      <div class="navbar-sections">
-        <a href="#welcome-section" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Work</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <div id="welcome-section">
-    <h1>Hi.  I'm Gerrett, a JavaScript Developer.</h1>
-    <p>I love spending time with my family, watching anime, gaming, and reading manga.  I also love creating cool things with code to help myself and hopufully others.</p>
-    <p>Some of my coding skills are:</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS/SASS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Vue</li>
-      <li>Gatsby</li>
-      <li>Node</li>
-      <li>GraphQL</li>
-      <li>Python</li>
-      <li>Git/GitHub Workflow</li>
-    </ul>
-  </div>
-
-  <div id="projects" >
-    <div class="project-tile">
-      <h2>Here's the magic!  Projects I've worked on.</h2>
-      <a href="https://codepen.io/gdurbin/pen/vMzbVb" class="project project-card">
-        <div class="title">Tribute Page</div>
-        <img class="project-img" src="https://codepen.io/gdurbin/pen/vMzbVb/image/small.png" alt="Project">
-      </a>
-      <a href="https://codepen.io/gdurbin/pen/PgLRoQ" class="project project-card">
-        <div class="title">Survey Form</div>
-        <img class="project-img" src="https://codepen.io/gdurbin/pen/PgLRoQ/image/small.png" alt="Project">
-      </a>
-      <a href="https://codepen.io/gdurbin/pen/mgoxbB" class="project project-card">
-        <div class="title">Product Landing Page</div>
-        <img class="project-img" src="https://codepen.io/gdurbin/pen/mgoxbB/image/small.png" alt="Project">
-      </a>
-      <a href="https://codepen.io/gdurbin/pen/zXXNXo" class="project project-card">
-        <div class="title">Technical Documentation Page</div>
-        <img class="project-img" src="https://codepen.io/gdurbin/pen/zXXNXo/image/small.png" alt="Project">
-      </a>
+  <section id="profile" class="profile">
+    <img class="profile__img" src="/dist/img/gerrett-profile-lq.jpg" alt="Gerrett">
+    <h1 class="profile__name">Gerrett Durbin</h1>
+    <h2 class="profile__title">JavaScript Developer</h2>
+    <div class="profile__links">
+      <ul class="profile__links-list">
+        <li class="profile__icon-github"><a href="https://github.com/gdurbin" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li class="profile__icon-twitter"><a href="https://twitter.com/gwdurbin" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li class="profile__icon-youtube"><a href="https://www.youtube.com/gerrettdurbin" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        <li class="profile__icon-email"><a href="mailto:gerrettdurbin@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+      </ul>
     </div>
-  </div>
+    <p class="profile__intro">I'm a self-taught JavaScript Developer.  I love learning new things and creating really cool stuff with code to help myself and hopufully others.</p>
+    <div class="profile__skills">
+      <h2 class="profile__skills-title">Skills</h2>
+      <ul class="profile__skills-list">
+        <li class="skills-item">HTML</li>
+        <li class="skills-item">CSS/SASS</li>
+        <li class="skills-item">JavaScript</li>
+        <li class="skills-item">Node</li>
+        <li class="skills-item">Express</li>
+        <li class="skills-item">MongoDB</li>
+        <li class="skills-item">React</li>
+        <li class="skills-item">Gatsby</li>
+        <li class="skills-item">GraphQL</li>
+        <li class="skills-item">Git/GitHub</li>
+      </ul>
+    </div>
+  </section>
 
-  <div id="contact">
-    <h2>Contact me:</h2>
-    <a href="https://twitter.com/gwdurbin" class="twitter-ico" target="_blank"><i class="fab fa-twitter-square fa-9x"></i></a>
-    <a href="https://github.com/gdurbin" id="profile-link" class="github-ico" target="_blank"><i class="fab fa-github-square fa-9x"></i></a>
-    <a href="mailto: gerrettdurbin@gmail.com" class="email-ico"><i class="fas fa-envelope-square fa-9x" target="_blank"></i></a>
-  </div>
+  <section id="projects" class="projects">
+   
+  </section>
 
   <footer>
     <p>Copyright &copy; 2019 Gerrett Durbin</p>
