@@ -20,6 +20,9 @@ body {
   .profile__skills .skills-item {
     color: white; }
 
+.project-card__title {
+  font-size: 1.8rem; }
+
 * {
   padding: 0;
   margin: 0;
@@ -28,6 +31,27 @@ body {
 * {
   font-family: "Poppins", sans-serif; }
 
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  width: 200px;
+  border: 2px solid #323232;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .project-card__links ul {
+    list-style: none; }
+  .project-card__tech ul {
+    list-style: none; }
+
+footer {
+  font-size: 1.2rem; }
+
 .container {
   display: grid;
   grid-template-columns: 400px 1fr;
@@ -35,24 +59,22 @@ body {
 
 .profile {
   padding: 2rem; }
+  .profile .hr {
+    background-color: #323232;
+    width: 30%;
+    height: 2px;
+    margin: auto; }
+  .profile__title {
+    margin-bottom: 2rem; }
   .profile__img {
     object-fit: cover;
+    border: 2px solid #323232;
     border-radius: 50%;
     height: 200px;
     width: 200px;
     margin: 2rem; }
-  .profile__links {
+  .profile__intro {
     margin: 2rem; }
-    .profile__links a:link,
-    .profile__links a:active,
-    .profile__links a:visited {
-      color: #323232; }
-    .profile__links a:hover {
-      color: #4c4c4c; }
-    .profile__links ul {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      list-style: none; }
   .profile__skills {
     margin: 2rem; }
   .profile__skills-list {
@@ -66,3 +88,15 @@ body {
       background-color: #323232;
       padding: .3rem;
       border-radius: .5rem; }
+  .profile__links {
+    margin: 2rem; }
+    .profile__links a:link,
+    .profile__links a:active,
+    .profile__links a:visited {
+      color: #323232; }
+    .profile__links a:hover {
+      color: #4c4c4c; }
+    .profile__links ul {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      list-style: none; }
