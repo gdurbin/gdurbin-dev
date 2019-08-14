@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  color: #323232;
   text-align: center; }
 
 .profile {
@@ -29,7 +30,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 400px 1fr; }
+  grid-template-columns: 400px 1fr;
+  height: 100vh; }
 
 .profile {
   padding: 2rem; }
@@ -37,16 +39,30 @@ body {
     object-fit: cover;
     border-radius: 50%;
     height: 200px;
-    width: 200px; }
-  .profile__links ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    list-style: none; }
+    width: 200px;
+    margin: 2rem; }
+  .profile__links {
+    margin: 2rem; }
+    .profile__links a:link,
+    .profile__links a:active,
+    .profile__links a:visited {
+      color: #323232; }
+    .profile__links a:hover {
+      color: #4c4c4c; }
+    .profile__links ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      list-style: none; }
+  .profile__skills {
+    margin: 2rem; }
   .profile__skills-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    text-align: center;
     grid-gap: 5px;
     list-style: none; }
     .profile__skills-list .skills-item {
-      background-color: black;
+      background-color: #323232;
+      padding: .3rem;
       border-radius: .5rem; }
