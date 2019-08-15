@@ -82,7 +82,7 @@ footer {
 
 .container {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 450px 1fr;
   overflow: hidden; }
 
 .profile {
@@ -115,7 +115,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     text-align: center;
-    grid-gap: 5px;
+    grid-gap: .5rem;
     list-style: none; }
     .profile__skills-list .skills-item {
       background-color: #323232;
@@ -133,6 +133,8 @@ footer {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       list-style: none; }
+    .profile__links i {
+      padding: 0 2rem; }
 
 .projects {
   display: grid;
