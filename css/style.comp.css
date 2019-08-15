@@ -115,13 +115,14 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     text-align: center;
-    grid-gap: 1rem;
+    grid-gap: .5rem;
     list-style: none; }
     .profile__skills-list .skills-item {
       background-color: #323232;
       padding: .3rem;
       border-radius: .5rem; }
   .profile__links {
+    padding: 0 1rem;
     margin: 2rem; }
     .profile__links a:link,
     .profile__links a:active,
