@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #323232;
+  color: #fff;
   text-align: center; }
 
 .profile {
@@ -20,11 +20,12 @@ body {
   .profile__skills .skills-item {
     color: white; }
 
-.project-card__title {
-  font-size: 1.6rem; }
-
-.project-card__desc {
-  font-size: 1.2rem; }
+.project-card {
+  color: #323232; }
+  .project-card__title {
+    font-size: 1.6rem; }
+  .project-card__desc {
+    font-size: 1.2rem; }
 
 footer {
   font-size: 1.2rem; }
@@ -77,7 +78,8 @@ footer {
 
 footer {
   height: 5vh;
-  border-right: 2px solid #323232; }
+  border-right: 2px solid #323232;
+  background-color: #0d9ff5; }
 
 .html {
   max-height: 1080px; }
@@ -93,7 +95,8 @@ footer {
   align-content: center;
   padding: 2rem;
   border-right: 2px solid #323232;
-  height: 95vh; }
+  height: 95vh;
+  background-color: #0d9ff5; }
   .profile .hr {
     background-color: #323232;
     width: 30%;
@@ -118,6 +121,7 @@ footer {
     justify-content: center;
     text-align: center;
     grid-gap: .5rem;
+    margin-top: 1rem;
     list-style: none; }
     .profile__skills-list .skills-item {
       background-color: #323232;
