@@ -20,13 +20,6 @@ body {
   .profile__skills .skills-item {
     color: white; }
 
-.project-card {
-  color: #323232; }
-  .project-card__title {
-    font-size: 1.6rem; }
-  .project-card__desc {
-    font-size: 1.2rem; }
-
 footer {
   font-size: 1.2rem; }
 
@@ -35,6 +28,9 @@ footer {
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 * {
   font-family: "Poppins", sans-serif; }
 
@@ -42,13 +38,23 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
+  color: #fff;
+  background-color: #0d9ff5;
   max-width: 300px;
   max-height: 400px;
+  padding: 2rem;
   border: 2px solid #323232;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
-  .project-card__img {
-    width: 100%; }
+  .project-card__title h2 {
+    font-size: 1.6rem; }
+  .project-card__img img {
+    max-width: 250px;
+    padding: 2rem 0;
+    border: 2px solid #323232;
+    border-radius: 5px; }
+  .project-card__desc p {
+    font-size: 1.4rem; }
   .project-card__links {
     margin: 2rem;
     font-size: 3rem; }
@@ -144,7 +150,7 @@ footer {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 320px));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 320px));
   justify-content: center;
   align-content: start;
   max-width: 1000px;
