@@ -1,0 +1,66 @@
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  color: $clr-white;
+  background-color: $clr-blue;
+  max-width: 300px;
+  max-height: 400px;
+  padding: 2rem;
+  border: 2px solid $clr-black;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  &__title h2 {
+    font-size: 1.6rem;
+  }
+
+  &__img img {
+    max-width: 250px;
+    padding: 2rem 0;
+    border: 2px solid $clr-black;
+    border-radius: 5px;
+  }
+
+  &__desc p {
+    font-size: 1.4rem;
+  }
+
+  &__links {
+    margin: 2rem;
+    font-size: 3rem;
+
+    & a:link,
+    & a:active,
+    & a:visited {
+      color: $clr-black;
+    }
+
+    & a:hover {
+      color: $clr-gray;
+    }
+
+    & ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      list-style: none;
+    }
+  }
+
+  &__tech ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    grid-gap: 5px;
+    padding: .4rem;
+    list-style: none;
+
+    .tech-item {
+      background-color: $clr-black;
+      color: white;
+      padding: .3rem;
+      border-radius: .5rem;
+    }
+  }
+}

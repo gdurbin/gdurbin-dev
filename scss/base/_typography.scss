@@ -1,0 +1,43 @@
+$font-stack: 'Poppins', sans-serif;
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: $font-stack;
+  color: $clr-white;
+  text-align: center;
+}
+
+.profile {
+
+  font-size: 1.6rem;
+
+  &__name {
+    font-size: 2.8rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+  }
+
+  &__links {
+    font-size: 2.8rem;
+  }
+
+  &__skills {
+
+    &-title {
+      font-size: 1.8rem;
+    }
+
+    .skills-item {
+      color: white;
+    }
+  }
+}
+
+footer {
+  font-size: 1.2rem;
+}
