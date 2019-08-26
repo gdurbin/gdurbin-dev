@@ -42,21 +42,23 @@ html {
   background-color: #0d9ff5;
   max-width: 300px;
   max-height: 400px;
-  padding: 2rem;
+  padding: 1rem;
   border: 2px solid #323232;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
   .project-card__title h2 {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    margin-bottom: 1rem; }
   .project-card__img img {
     max-width: 250px;
     padding: 2rem 0;
     border: 2px solid #323232;
     border-radius: 5px; }
   .project-card__desc p {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    margin-top: 1rem; }
   .project-card__links {
-    margin: 2rem;
+    margin: .5rem;
     font-size: 3rem; }
     .project-card__links a:link,
     .project-card__links a:active,
@@ -77,6 +79,7 @@ html {
     padding: .4rem;
     list-style: none; }
     .project-card__tech ul .tech-item {
+      font-size: 1.2rem;
       background-color: #323232;
       color: white;
       padding: .3rem;

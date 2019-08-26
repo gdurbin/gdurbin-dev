@@ -6,13 +6,14 @@
   background-color: $clr-blue;
   max-width: 300px;
   max-height: 400px;
-  padding: 2rem;
+  padding: 1rem;
   border: 2px solid $clr-black;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
   &__title h2 {
     font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
 
   &__img img {
@@ -24,10 +25,11 @@
 
   &__desc p {
     font-size: 1.4rem;
+    margin-top: 1rem;
   }
 
   &__links {
-    margin: 2rem;
+    margin: .5rem;
     font-size: 3rem;
 
     & a:link,
@@ -57,6 +59,7 @@
     list-style: none;
 
     .tech-item {
+      font-size: 1.2rem;
       background-color: $clr-black;
       color: white;
       padding: .3rem;
