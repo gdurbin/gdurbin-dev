@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
-  color: $clr-white;
+  color: $clr-black;
   background-color: $clr-blue;
   max-width: 300px;
   max-height: 400px;
@@ -19,6 +19,7 @@
   &__img img {
     max-width: 250px;
     padding: 2rem 0;
+    background-color: $clr-black;
     border: 2px solid $clr-black;
     border-radius: 5px;
   }
