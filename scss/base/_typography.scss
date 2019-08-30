@@ -16,10 +16,19 @@ body {
 
   &__name {
     font-size: 2.8rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
   }
 
   &__title {
     font-size: 1.8rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+  }
+
+  &__intro {
+    font-size: 1.8rem;
+    font-weight: 600;
   }
 
   &__links {

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
   color: $clr-black;
   background-color: $clr-blue;
   max-width: 300px;
@@ -11,12 +12,13 @@
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
-  &__title h2 {
+  &__title {
     font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 
-  &__img img {
+  &__img {
+    display: block;
     max-width: 250px;
     padding: 2rem 0;
     background-color: $clr-black;
@@ -24,7 +26,7 @@
     border-radius: 5px;
   }
 
-  &__desc p {
+  &__desc {
     font-size: 1.4rem;
     margin-top: 1rem;
   }
@@ -32,6 +34,10 @@
   &__links {
     margin: .5rem;
     font-size: 3rem;
+
+    .project-card__icon {
+      margin: 0 1rem;
+    }
 
     & a:link,
     & a:active,
