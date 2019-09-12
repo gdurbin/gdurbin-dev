@@ -23,8 +23,10 @@ body {
   .profile__links {
     font-size: 2.8rem; }
   .profile__skills-title {
-    font-size: 1.8rem; }
-  .profile__skills .skills-item {
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase; }
+  .profile__skills-item {
     color: white; }
 
 footer {
@@ -70,8 +72,6 @@ html {
   .project-card__links {
     margin: .5rem;
     font-size: 3rem; }
-    .project-card__links .project-card__icon {
-      margin: 0 1rem; }
     .project-card__links a:link,
     .project-card__links a:active,
     .project-card__links a:visited {
@@ -82,6 +82,8 @@ html {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       list-style: none; }
+  .project-card__links-item {
+    margin: 0 1rem; }
   .project-card__tech ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -90,12 +92,12 @@ html {
     grid-gap: 5px;
     padding: .4rem;
     list-style: none; }
-    .project-card__tech ul .tech-item {
-      font-size: 1.2rem;
-      background-color: #323232;
-      color: white;
-      padding: .3rem;
-      border-radius: .5rem; }
+  .project-card__tech-item {
+    font-size: 1.2rem;
+    background-color: #323232;
+    color: white;
+    padding: .3rem;
+    border-radius: .5rem; }
 
 footer {
   font-size: 1.4rem;
@@ -159,10 +161,10 @@ footer {
     grid-gap: .5rem;
     margin-top: 1rem;
     list-style: none; }
-    .profile__skills-list .skills-item {
-      background-color: #323232;
-      padding: .8rem;
-      border-radius: .5rem; }
+  .profile__skills-item {
+    background-color: #323232;
+    padding: .8rem;
+    border-radius: .5rem; }
   .profile__links {
     margin: 2rem; }
     .profile__links a:link,

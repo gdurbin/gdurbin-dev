@@ -35,9 +35,6 @@
     margin: .5rem;
     font-size: 3rem;
 
-    .project-card__icon {
-      margin: 0 1rem;
-    }
 
     & a:link,
     & a:active,
@@ -56,6 +53,10 @@
     }
   }
 
+  &__links-item {
+    margin: 0 1rem;
+  }
+
   &__tech ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -64,13 +65,13 @@
     grid-gap: 5px;
     padding: .4rem;
     list-style: none;
+  }
 
-    .tech-item {
-      font-size: 1.2rem;
-      background-color: $clr-black;
-      color: white;
-      padding: .3rem;
-      border-radius: .5rem;
-    }
+  &__tech-item {
+    font-size: 1.2rem;
+    background-color: $clr-black;
+    color: white;
+    padding: .3rem;
+    border-radius: .5rem;
   }
 }

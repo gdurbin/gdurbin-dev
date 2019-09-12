@@ -39,11 +39,13 @@ body {
 
     &-title {
       font-size: 1.8rem;
-    }
+      letter-spacing: .2rem;
+      text-transform: uppercase;
+    }    
+  }
 
-    .skills-item {
-      color: white;
-    }
+  &__skills-item {
+    color: white;
   }
 }
 
