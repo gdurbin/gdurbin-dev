@@ -99,17 +99,20 @@ html {
     padding: .3rem;
     border-radius: .5rem; }
 
-footer {
+.footer {
   font-size: 1.4rem;
-  width: 450px;
+  width: 100%;
   height: 5vh;
   border-right: 2px solid #323232;
   background-color: #0d9ff5; }
-  footer p {
-    margin: 2rem; }
+  .footer__copyright {
+    padding: 1rem 0; }
 
-.html {
-  min-height: 100vh; }
+@media (max-width: 750px) {
+  .footer {
+    width: 100%;
+    border-right: 0;
+    border-top: 2px solid #323232; } }
 
 .container {
   display: grid;
@@ -119,7 +122,7 @@ footer {
 .profile {
   display: grid;
   grid-template-columns: 1fr;
-  grid-column: 1 / -1;
+  grid-column: 1 / -2;
   justify-items: center;
   align-content: center;
   padding: 2rem;
@@ -143,11 +146,13 @@ footer {
   .profile__intro {
     margin: 2rem; }
   .profile__skills {
+    width: 100%;
     margin: 2rem; }
   .profile__skills-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
+    width: 100%;
     text-align: center;
     grid-gap: .5rem;
     margin-top: 1rem;
@@ -158,6 +163,8 @@ footer {
     border-radius: .5rem; }
   .profile__links {
     margin: 2rem; }
+    .profile__links-item {
+      width: 100%; }
     .profile__links a:link,
     .profile__links a:active,
     .profile__links a:visited {
@@ -171,12 +178,30 @@ footer {
     .profile__links i {
       padding: 0 2rem; }
 
+@media (max-width: 750px) {
+  .container {
+    grid-template-columns: minmax(200px, 750px); }
+  .profile {
+    grid-template-columns: minmax(200px, 750px);
+    grid-column: 1 / -1;
+    border-right: 0;
+    height: 100%;
+    border-bottom: 2px solid #323232; }
+    .profile__skills {
+      grid-template-columns: repeat(auto-fit, minmax(85px, 1fr)); }
+    .profile__links {
+      margin-bottom: 2rem 1rem; } }
+
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 320px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   align-content: start;
-  max-width: 1000px;
+  max-width: 100%;
   padding: 2rem; }
   .projects .project-card {
-    justify-self: center; }
+    justify-self: start; }
+
+@media (max-width: 750px) {
+  .projects .project-card {
+    justify-self: center; } }
