@@ -107,9 +107,6 @@ footer {
   background-color: #0d9ff5; }
   footer p {
     margin: 2rem; }
-  @media (max-width: 576px) {
-    footer {
-      border-top: 2px solid #323232; } }
 
 .html {
   min-height: 100vh; }
@@ -118,23 +115,17 @@ footer {
   display: grid;
   grid-template-columns: 450px 1fr;
   overflow: hidden; }
-  @media (max-width: 576px) {
-    .container {
-      grid-template-columns: 375px;
-      grid-template-rows: repeat(auto-fit);
-      justify-items: center; } }
 
 .profile {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
   justify-items: center;
   align-content: center;
   padding: 2rem;
   border-right: 2px solid #323232;
   height: 95vh;
   background-color: #0d9ff5; }
-  @media (max-width: 576px) {
-    .profile {
-      border-bottom: 2px solid #323232; } }
   .profile .hr {
     background-color: #323232;
     width: 30%;
@@ -187,13 +178,5 @@ footer {
   align-content: start;
   max-width: 1000px;
   padding: 2rem; }
-  @media (max-width: 576px) {
-    .projects {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      align-content: center;
-      max-width: 100%;
-      padding: 2rem; } }
   .projects .project-card {
     justify-self: center; }
